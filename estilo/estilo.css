@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #46464f;
+  }
+  h1 {
+    text-align:center;
+    color: #FFFAFA;
+    font-size: 30px;
+    font-family: "Lucida Sans";
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .btn{
+    position: relative;
+    display: block;
+    color: #FFFAFA;
+    font-size: 16px;
+    font-family: "verdana";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2.5px solid #04fd36;
+    padding: 14px 80px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 2.5s all ease;
+  }
+  .btn::before{
+    background: #111111;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.9s ease;
+  }
+  
+  .btn1::before{
+    width: 0%;
+    height: 100%;
+  }
+  
+  .btn1:hover::before{
+    width: 100%;
+  }
+  
+  
+  
